@@ -13,6 +13,8 @@ permissions:
     group: root
     mode: 755
 
+#앱 실행 테스트
+
 #hooks:
 #BeforeInstall:
 #    - location: scripts/beforeInstall.sh
