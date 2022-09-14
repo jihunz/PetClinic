@@ -13,15 +13,13 @@ permissions:
     group: root
     mode: 755
 
-#앱 실행 테스트
+hooks:
+BeforeInstall:
+    - location: scripts/beforeInstall.sh
+      timeout: 60
+      runas: root
 
-#hooks:
-#BeforeInstall:
-#    - location: scripts/beforeInstall.sh
-#      timeout: 60
-#      runas: root
-#
-#ApplicationStart:
-#    - location: scripts/applicationStart.sh
-#      timeout: 60
-#      runas: root
+ApplicationStart:
+    - location: scripts/applicationStart.sh
+      timeout: 60
+      runas: root
