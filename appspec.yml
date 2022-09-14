@@ -14,7 +14,12 @@ permissions:
     mode: 755
 
 hooks:
-  ApplicationStart:
-    - location: scripts/runApp.sh
+BeforeInstall:
+    - location: scripts/beforeInstall.sh
+      timeout: 60
+      runas: root
+
+ApplicationStart:
+    - location: scripts/applicationStart.sh
       timeout: 60
       runas: root
