@@ -13,13 +13,13 @@ permissions:
     group: root
     mode: 755
 
-hooks:
-  ApplicationStop:
-    - location: scripts/stop.sh
-      timeout: 60
-      runas: root
-
-  ApplicationStart:
-    - location: scripts/start.sh
-      timeout: 60
-      runas: root
+#hooks:
+#  ApplicationStop:
+#    - location: scripts/stop.sh
+#      timeout: 60
+#      runas: root
+#
+#  ApplicationStart:
+#    - location: scripts/start.sh
+#      timeout: 60
+#      runas: root
