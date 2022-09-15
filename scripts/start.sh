@@ -4,3 +4,4 @@
 cd /
 cd ../home/ec2-user/Petclinic/build/libs
 sudo java -jar spring-petclinic-2.6.0.jar
+echo "server run completed"
