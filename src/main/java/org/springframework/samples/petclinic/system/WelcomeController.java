@@ -32,4 +32,9 @@ class WelcomeController {
 		return "index_test";
 	}
 
+	@GetMapping("/index_test2")
+	public String index_test2() {
+		return "index_test2";
+	}
+
 }
