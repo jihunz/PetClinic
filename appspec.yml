@@ -19,7 +19,7 @@ BeforeInstall:
       timeout: 60
       runas: root
 
-ApplicationStart:
-    - location: scripts/applicationStart.sh
-      timeout: 60
-      runas: root
+#ApplicationStart:
+#    - location: scripts/applicationStart.sh
+#      timeout: 60
+#      runas: root
